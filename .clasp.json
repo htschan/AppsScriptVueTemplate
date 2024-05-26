@@ -1,0 +1,5 @@
+{
+    "scriptId": "<your script id>",
+    "rootDir": "./appsscript",
+    "projectId": "<your project id>"
+}

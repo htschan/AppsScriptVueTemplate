@@ -1,0 +1,29 @@
+{
+  "name": "appsscripttemplate",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "nodemon --watch ./src -e js,html,vue --exec \"npm run build\" ",
+    "build": "parcel build ./src/index.html --dist-dir ./appsscript --public-url .",
+    "glogin": "clasp login",
+    "glogout": "clasp logout",
+    "gpull": "clasp pull",
+    "gpush": "clasp push",
+    "gapis": "clasp apis list",
+    "gcreate": "clasp create --title \"AppScript Template\" --rootDir ./appsscript",
+    "gstart": "clasp push --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "description": "An AppScript template with Vue.js, Metro 4, clasp and Parcel",
+  "devDependencies": {
+    "@google/clasp": "^2.4.2",
+    "@parcel/transformer-vue": "^2.12.0",
+    "@types/google-apps-script": "^1.0.83",
+    "nodemon": "^3.1.0",
+    "parcel": "^2.12.0"
+  },
+  "dependencies": {
+    "vue": "^3.4.27"
+  }
+}
